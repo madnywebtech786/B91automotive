@@ -1,0 +1,117 @@
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+export default function WorkingProcess() {
+  return (
+    <div>
+      <div className="flex flex-col items-center text-center py-40 px-20 bg-white relative z-10 working-process">
+        {/* Process Title */}
+        <div className="mb-10">
+          <p className="text-red-500 font-semibold uppercase flex items-center justify-center gap-2 mb-3">
+            <div className="w-10 h-0.5 bg-red-500"></div>
+            Our Process
+          </p>
+          <h2 className="text-4xl font-bold text-gray-900">
+            Our Working Process
+          </h2>
+        </div>
+
+        {/* Content Section */}
+        <div className="relative flex items-center justify-center w-full">
+          {/* Left Side Text */}
+          <div className="w-1/3 flex flex-col items-end text-right space-y-16 pr-10">
+            <div className="flex items-start gap-4">
+              <div>
+                <h3 className="text-xl font-bold">Identify Problems</h3>
+                <p className="text-gray-600 max-w-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+              <div className="processIconLeft relative z-20">
+                <Image
+                  src="/images/icons/identify.svg"
+                  alt="Icon"
+                  width={70}
+                  height={70}
+                  className="relative z-20"
+                />
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div>
+                <h3 className="text-xl font-bold">Start Servicing</h3>
+                <p className="text-gray-600 max-w-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+              <div className="processIconLeft relative z-20">
+                <Image
+                  src="/images/icons/service.svg"
+                  alt="Icon"
+                  width={70}
+                  height={70}
+                  className="relative z-20"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Rotating Center Image */}
+          <div className="w-1/3 p-10 ">
+            <motion.div
+              animate={{ rotate: 360 }}
+              transition={{ repeat: Infinity, duration: 6, ease: "linear" }}
+            >
+              <Image
+                src="/images/tyre.png"
+                alt="Process Image"
+                width={400}
+                height={400}
+                className="w-full rounded-full"
+              />
+            </motion.div>
+          </div>
+
+          {/* Right Side Text */}
+          <div className="w-1/3 flex flex-col items-start text-left space-y-16 pl-10">
+            <div className="flex items-start gap-4">
+              <div className="processIconRight relative z-20">
+                <Image
+                  src="/images/icons/crash.svg"
+                  alt="Icon"
+                  width={70}
+                  height={70}
+                  className="relative z-20"
+                />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold">Trial For Make Sure</h3>
+                <p className="text-gray-600 max-w-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="processIconRight relative z-20">
+                <Image
+                  src="/images/icons/deliver.svg"
+                  alt="Icon"
+                  width={70}
+                  height={70}
+                  className="relative z-20"
+                />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold">Deliver Service</h3>
+                <p className="text-gray-600 max-w-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
