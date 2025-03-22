@@ -19,7 +19,7 @@ const Hero = () => {
     if (swiperRef.current) swiperRef.current.slidePrev();
   };
   return (
-    <div className="relative w-full h-screen bg-black">
+    <div className="relative w-full h-auto py-40 lg:py-0 lg:h-screen bg-black">
       <Swiper
         modules={[Navigation, Autoplay]}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -30,22 +30,22 @@ const Hero = () => {
         {[1, 2, 3].map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className={`relative w-full h-full flex items-center justify-center p-20 slide-${slide}`}
+              className={`relative w-full h-full flex items-center justify-center p-4 lg:p-20 slide-${slide}`}
             >
               <div className="w-full bg-opacity-50 flex flex-col items-start justify-center gap-3 ">
-                <p className="text-white text-lg font-semibold flex items-center gap-2">
+                <p className="text-white text-base lg:text-lg font-semibold flex items-center gap-2">
                   🔗 WE'RE PROVIDE BEST SERVICES
                 </p>
-                <h1 className="text-white text-5xl font-bold mt-2">
+                <h1 className="text-white text-4xl lg:text-5xl font-bold mt-2">
                   WORLD WIDE
                 </h1>
-                <h2 className="text-white text-7xl font-bold">BEST SHIPPING</h2>
+                <h2 className="text-white text-5xl lg:text-7xl font-bold">BEST SHIPPING</h2>
                 <p className="text-gray-300 mt-4 max-w-lg">
                   Proin eget tortor risus. Vivamus suscipit tortor eget felis
                   porttitor.
                 </p>
                 <div className="flex items-center mt-6 gap-4">
-                  <button className="bg-primary text-white px-6 py-3 rounded-lg font-bold">
+                  <button className="bg-primary text-white px-4 py-3 lg:px-6 lg:py-3 text-sm lg:text-base rounded-lg font-bold">
                     FREE QUOTE!
                   </button>
                   <button className="flex items-center text-primary gap-2">
@@ -63,7 +63,7 @@ const Hero = () => {
 
       {/* Navigation Buttons */}
 
-      <div className="absolute top-[40%] right-0 flex flex-col gap-5 w-40 h-40">
+      <div className="hidden lg:flex absolute top-[40%] right-0  flex-col gap-5 w-40 h-40">
         <button
           onClick={handleNext}
           className="w-16 h-16 bg-primary text-white text-4xl rounded-full flex items-center justify-center z-10 cursor-pointer"

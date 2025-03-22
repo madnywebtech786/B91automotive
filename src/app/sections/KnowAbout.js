@@ -4,12 +4,12 @@ import Image from "next/image";
 
 import React from "react";
 
-export default function CarRepairSection() {
+export default function KnowAbout() {
   return (
-    <div className="flex items-center justify-between w-full p-20 bg-white">
+    <div className="flex flex-col lg:flex-row items-center justify-between w-full p-4 lg:p-20 bg-white gap-16 lg:gap-0">
       {/* Left Side - Images */}
-      <div className="relative w-1/2 flex flex-col gap-5 h-[500px]">
-        <div className="absolute top-10 left-10">
+      <div className="relative w-full lg:w-1/2 flex flex-col gap-5 h-[500px]">
+        <div className="absolute top-10 left-0 lg:left-10">
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ repeat: Infinity, duration: 6, ease: "linear" }}
@@ -24,7 +24,7 @@ export default function CarRepairSection() {
           />
         </div>
 
-        <div className="absolute top-12 right-0  p-2 inline-block aboutimg1 z-20 ">
+        <div className="absolute top-5 lg:top-12 right-0  p-2 inline-block aboutimg1 z-20 ">
           <Image
             src="/images/slide1.jpg"
             alt="Mechanic"
@@ -33,7 +33,7 @@ export default function CarRepairSection() {
             className="rounded-md  border-5 border-white  min-h-[250px]"
           />
         </div>
-        <div className="absolute bottom-0 left-10 p-2 inline-block aboutimg2 ">
+        <div className="absolute bottom-0 left-0 lg:left-10 p-2 inline-block aboutimg2 ">
           <Image
             src="/images/slide3.jpg"
             alt="Car Repair"
@@ -45,12 +45,12 @@ export default function CarRepairSection() {
       </div>
 
       {/* Right Side - Text Content */}
-      <div className=" relative w-1/2 pl-10 h-[500px] flex flex-col justify-center">
+      <div className=" relative w-full lg:w-1/2 p-4 lg:pl-10 h-[500px] flex flex-col justify-center">
         <p className="text-red-500 font-semibold uppercase flex items-center gap-2">
           <div className="w-10 h-0.5 bg-red-500"></div>
           Know About Us
         </p>
-        <h2 className="text-6xl font-bold text-gray-900 mt-2">
+        <h2 className="text-3xl lg:text-6xl font-bold text-gray-900 mt-2">
           Where Expertise Meets Every Engine
         </h2>
         <p className="text-gray-600 mt-4 max-w-lg">
@@ -95,7 +95,7 @@ export default function CarRepairSection() {
             Quick and Efficient Car Repairs
           </li>
         </ul>
-        <div className="absolute bottom-0 right-5 bg-red-500/80 p-8 py-12 text-center  experience text-white">
+        <div className="hidden lg:block absolute bottom-0 right-5 bg-red-500/80 p-8 py-12 text-center  experience text-white">
           <div className="flex flex-col items-center gap-3">
             <Image
               src={"/images/icons/repair.svg"}
@@ -109,7 +109,7 @@ export default function CarRepairSection() {
           </div>
         </div>
         <div className="mt-6 flex items-center gap-6">
-          <button className="bg-red-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-600 transition">
+          <button className="bg-red-500 text-white text-sm lg:text-base px-4 lg:px-6 py-3 rounded-lg font-bold hover:bg-red-600 transition">
             Read More →
           </button>
         </div>

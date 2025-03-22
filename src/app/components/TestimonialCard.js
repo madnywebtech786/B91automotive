@@ -23,7 +23,6 @@ export default function TestimonialCard({
   role,
   avatar,
 }) {
-  console.log(quote);
   // Helper function to render star icons
   const renderStars = (count) => {
     const stars = [];
@@ -52,7 +51,7 @@ export default function TestimonialCard({
   };
 
   return (
-    <div className="relative w-full h-5/6 max-w-sm bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="relative mx-auto w-full h-5/6 max-w-sm bg-white rounded-lg shadow-md overflow-hidden">
       {/* Top Section: Title + Stars */}
       <div className="p-4">
         <h3 className="font-bold text-gray-800 text-lg">{title}</h3>

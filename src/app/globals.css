@@ -2,6 +2,7 @@
 
 @theme {
   --color-primary: red;
+  --text-xxs:8px;
 }
 
 :root {
@@ -14,6 +15,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -96,7 +98,7 @@ body {
 .testimonials::before {
   content: "";
   position: absolute;
-  top: 40px;
+  top: 80px;
   left: 40px;
   width: 40%;
   height: 100%;
@@ -106,4 +108,16 @@ body {
 
   border: none;
   border-radius: 6px;
+}
+/* Hide ::before on screens smaller than 1280px */
+@media (max-width: 1279px) {
+  .testimonials::before {
+    display: none;
+    content: none; /* Ensures no content is applied */
+  }
+
+  .aboutimg1::before,
+.aboutimg2::after{
+  display: none;
+}
 }

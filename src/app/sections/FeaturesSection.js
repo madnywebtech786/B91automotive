@@ -16,8 +16,8 @@ const FeaturesSection = () => {
       </div>
 
       {/* Right Side - Content */}
-      <div className="w-full md:w-1/2 p-10 py-20">
-        <h2 className="text-4xl font-bold mb-10 flex items-center gap-2">
+      <div className="w-full md:w-1/2 p-4 lg:p-10 py-20">
+        <h2 className="text-3xl lg:text-4xl font-bold mb-10 flex items-center gap-2">
           <div className="w-10 h-0.5 bg-white"></div>
           Our Features
         </h2>
