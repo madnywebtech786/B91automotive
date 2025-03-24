@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 import React from "react";
@@ -10,16 +9,12 @@ export default function KnowAbout() {
       {/* Left Side - Images */}
       <div className="relative w-full lg:w-1/2 flex flex-col gap-5 h-[500px]">
         <div className="absolute top-10 left-0 lg:left-10">
-          <motion.div
-            animate={{ rotate: 360 }}
-            transition={{ repeat: Infinity, duration: 6, ease: "linear" }}
-            className="absolute top-0 left-0 w-24 h-24 bg-no-repeat bg-cover"
+          <div
+            className="absolute top-0 left-0 w-24 h-24 bg-no-repeat bg-cover animate-spin-custom"
             style={{ backgroundImage: "url('/images/screw-1.png')" }}
           />
-          <motion.div
-            animate={{ rotate: -360 }}
-            transition={{ repeat: Infinity, duration: 6, ease: "linear" }}
-            className="absolute top-6 left-22 w-20 h-20 bg-no-repeat bg-cover"
+          <div
+            className="absolute top-6 left-22 w-20 h-20 bg-no-repeat bg-cover animate-spin-reverse"
             style={{ backgroundImage: "url('/images/screw-1.png')" }}
           />
         </div>

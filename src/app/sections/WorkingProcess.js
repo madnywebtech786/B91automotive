@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 export default function WorkingProcess() {
   return (
@@ -59,11 +58,7 @@ export default function WorkingProcess() {
 
           {/* Rotating Center Image */}
           <div className="w-full lg:w-1/3 p-10 ">
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ repeat: Infinity, duration: 6, ease: "linear" }}
-              className="mx-auto w-2/3 lg:w-full"
-            >
+            <div className="mx-auto w-2/3 lg:w-full animate-spin-custom-4">
               <Image
                 src="/images/tyre.png"
                 alt="Process Image"
@@ -71,7 +66,7 @@ export default function WorkingProcess() {
                 height={400}
                 className="w-full rounded-full"
               />
-            </motion.div>
+            </div>
           </div>
 
           {/* Right Side Text */}

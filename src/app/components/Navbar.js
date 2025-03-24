@@ -6,11 +6,17 @@ import Image from "next/image";
 
 export default function Navbar() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const [activeAccordion, setActiveAccordion] = useState(null);
 
   const toggleMobileNav = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
   };
 
+  const toggleAccordion = (accordionIndex) => {
+    setActiveAccordion((prev) =>
+      prev === accordionIndex ? null : accordionIndex
+    );
+  };
   const closeMobileNav = () => {
     if (activeAccordion === 1) {
       toggleAccordion(1);
@@ -42,19 +48,65 @@ export default function Navbar() {
                   Home
                 </Link>
                 <Link
-                  href={"/"}
+                  href={"/About-us"}
                   className="font-bold text-lg hover:text-primary hover:scale-105 duration-300"
                 >
                   About Us
                 </Link>
+                <div className="relative group menu">
+                  <div className="flex items-center">
+                    <Link
+                      href="#"
+                      className="font-bold text-lg flex items-center py-3 "
+                    >
+                      Services
+                      <span className="ml-2 transition-transform transform group-hover:rotate-180">
+                        <Image
+                          src="/images/icons/ArrowDown.svg"
+                          alt="arrow img"
+                          width={13}
+                          height={13}
+                        />
+                      </span>
+                    </Link>
+                  </div>
+
+                  {/* Dropdown Menu */}
+                  <div className="dropdown-menu text-sm">
+                    <Link
+                      href="/Services/engine-transmission-diagnostics-and-repairs"
+                      className="block px-4 py-2 hover:bg-primary/30 capitalize rounded-t-md border-b"
+                    >
+                      Engine & Transmission Diagnostics and Repairs
+                    </Link>
+                    <Link
+                      href="/Services/autobody-restoration-and-collision-repair"
+                      className="block px-4 py-2 hover:bg-primary/30 capitalize border-b"
+                    >
+                      Autobody Restoration & Collision Repair
+                    </Link>
+                    <Link
+                      href="/Services/insurance-claims-assistance-and-repair-coordination"
+                      className="block px-4 py-2 hover:bg-primary/30 capitalize border-b"
+                    >
+                      Insurance Claims Assistance & Repair Coordination
+                    </Link>
+                    <Link
+                      href="/Services/windshield-replacement-and-chip-repair"
+                      className="block px-4 py-2 hover:bg-primary/30 capitalize border-b"
+                    >
+                      Windshield Replacement & Chip Repair
+                    </Link>
+                    <Link
+                      href="/Services/premium-new-and-certified-pre-owned-automotive-parts"
+                      className="block px-4 py-2 hover:bg-primary/30 capitalize rounded-b-md"
+                    >
+                      Premium New & Certified Pre-Owned Automotive Parts
+                    </Link>
+                  </div>
+                </div>
                 <Link
-                  href={"/"}
-                  className="font-bold text-lg hover:text-primary hover:scale-105 duration-300"
-                >
-                  Services
-                </Link>
-                <Link
-                  href={"/"}
+                  href={"/Contact-us"}
                   className="font-bold text-lg hover:text-primary hover:scale-105 duration-300"
                 >
                   Contact
@@ -125,21 +177,79 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            href="/about-us"
+            href="/About-us"
             className="text-xl font-medium border-b border-primary w-full text-start py-4"
             onClick={closeMobileNav}
           >
             About Us
           </Link>
+          <div className="w-full mobile-menu">
+            {/* Planning Accordion */}
+            <button
+              onClick={() => toggleAccordion(1)}
+              className="text-xl font-medium  w-full text-left py-3 border-b border-primary flex justify-between items-center my-2"
+            >
+              Services
+              <Image
+                src="/images/icons/ArrowDown.svg"
+                alt="arrow"
+                width={13}
+                height={13}
+                className={`transform transition-transform ${
+                  activeAccordion === 1 ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+            <div
+              className={`overflow-hidden transition-all duration-500 ${
+                activeAccordion === 1 ? "max-h-80" : "max-h-0"
+              }`}
+              style={{
+                transitionProperty: "max-height",
+              }}
+            >
+              <div className="flex flex-col bg-primary/30 text-base rounded-lg">
+                <Link
+                  href="/Services/engine-transmission-diagnostics-and-repairs"
+                  className="block px-4 py-3"
+                  onClick={closeMobileNav}
+                >
+                  Engine & Transmission Diagnostics and Repairs
+                </Link>
+                <Link
+                  href="/Services/autobody-restoration-and-collision-repair"
+                  className="block px-4 py-3"
+                  onClick={closeMobileNav}
+                >
+                  Autobody Restoration & Collision Repair
+                </Link>
+                <Link
+                  href="/Services/insurance-claims-assistance-and-repair-coordination"
+                  className="block px-4 py-3"
+                  onClick={closeMobileNav}
+                >
+                  Insurance Claims Assistance & Repair Coordination
+                </Link>
+                <Link
+                  href="/Services/windshield-replacement-and-chip-repair"
+                  className="block px-4 py-3"
+                  onClick={closeMobileNav}
+                >
+                  Windshield Replacement & Chip Repair
+                </Link>
+                <Link
+                  href="/Services/premium-new-and-certified-pre-owned-automotive-parts"
+                  className="block px-4 py-3"
+                  onClick={closeMobileNav}
+                >
+                  Premium New & Certified Pre-Owned Automotive Parts
+                </Link>
+              </div>
+            </div>
+          </div>
+
           <Link
-            href="/services"
-            className="text-xl font-medium border-b border-primary w-full text-start py-4"
-            onClick={closeMobileNav}
-          >
-            Our Services
-          </Link>
-          <Link
-            href="/contact-us"
+            href="/Contact-us"
             className="text-xl font-medium w-full text-start py-4"
             onClick={closeMobileNav}
           >

@@ -32,13 +32,15 @@ const LogisticsServices = () => {
   ];
 
   return (
-    <section className="p-4 lg:p-20 pb-40 bg-red-50">
+    <section className="p-4 lg:p-20 !pb-40 bg-red-50">
       <div className="text-center mb-10">
-      <p className="text-red-500 font-semibold uppercase flex items-center justify-center gap-2 mb-3">
+        <p className="text-red-500 font-semibold uppercase flex items-center justify-center gap-2 mb-3">
           <div className="w-10 h-0.5 bg-red-500"></div>
           Our Services
         </p>
-        <h2 className="text-2xl lg:text-4xl font-bold">Specialist Logistics Services</h2>
+        <h2 className="text-2xl lg:text-4xl font-bold">
+          Specialist Logistics Services
+        </h2>
       </div>
       <div className="flex flex-col lg:flex-row justify-center gap-32 lg:gap-6 px-10">
         {services.map((service, index) => (

@@ -3,13 +3,13 @@
 import Image from "next/image";
 import React from "react";
 
-export default function ContactSection() {
+export default function ContactSection({singlePage=false}) {
   return (
-    <section className="relative overflow-hidden bg-primary p-4 py-20 lg:p-20">
+    <section className={`relative overflow-hidden ${singlePage?'bg-white':'bg-primary'} p-4 py-20 lg:p-20`}>
       {/* Wave background at the top */}
 
       {/* Main content wrapper */}
-      <div className="relative w-full lg:w-7/8 mx-auto p-8 md:p-12 lg:p-16 bg-white rounded-xl shadow-xl">
+      <div className="relative w-full lg:w-7/8 mx-auto p-8 md:p-12 lg:p-16 bg-white rounded-xl shadow-2xl">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Left side: Contact Info */}
           <div className="flex flex-col justify-center">
