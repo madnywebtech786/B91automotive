@@ -6,7 +6,8 @@ const FeaturesSection = () => {
       {/* Left Side - Image */}
       <div className="w-full md:w-1/2 relative featureSide">
         <Image
-          src="/images/features.png"
+          loading="lazy"
+          src="/images/features.webp"
           alt="Mechanic Working"
           width={600}
           height={400}

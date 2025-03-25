@@ -22,7 +22,8 @@ export default function KnowAbout() {
 
         <div className="absolute top-5 lg:top-12 right-0  p-2 inline-block aboutimg1 z-20 ">
           <Image
-            src="/images/slide1.jpg"
+            loading="lazy"
+            src="/images/slide-1.webp"
             alt="Mechanic"
             width={400}
             height={500}
@@ -31,7 +32,8 @@ export default function KnowAbout() {
         </div>
         <div className="absolute bottom-0 left-0 lg:left-10 p-2 inline-block aboutimg2 ">
           <Image
-            src="/images/slide3.jpg"
+            loading="lazy"
+            src="/images/slide-3.webp"
             alt="Car Repair"
             width={400}
             height={500}

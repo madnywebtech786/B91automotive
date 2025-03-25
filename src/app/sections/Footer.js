@@ -64,7 +64,10 @@ export default function Footer() {
           <Link href="/About-us" className="underline-animation-white w-max">
             About Us
           </Link>
-          <Link href="/#testimonials" className="underline-animation-white w-max">
+          <Link
+            href="/#testimonials"
+            className="underline-animation-white w-max"
+          >
             Testimonials
           </Link>
           <Link href="/Contact-us" className="underline-animation-white w-max">
@@ -130,42 +133,48 @@ export default function Footer() {
           <h2 className="text-xl font-bold uppercase ">Gallery</h2>
           <div className="w-2/3 lg:w-full  flex flex-wrap">
             <Image
-              src={"/images/slide1.jpg"}
+              src={"/images/slide-1.webp"}
+              loading="lazy"
               alt="gallery img 1"
               width={150}
               height={150}
               className="w-1/2 lg:w-1/3 rounded-lg p-1"
             />
             <Image
-              src={"/images/slide3.jpg"}
+              src={"/images/slide-3.webp"}
+              loading="lazy"
               alt="gallery img 1"
               width={150}
               height={150}
               className="w-1/2 lg:w-1/3 rounded-lg p-1"
             />
             <Image
-              src={"/images/slide2.jpg"}
+              src={"/images/slide-2.webp"}
+              loading="lazy"
               alt="gallery img 1"
               width={150}
               height={150}
               className="w-1/2 lg:w-1/3 rounded-lg p-1"
             />
             <Image
-              src={"/images/slide3.jpg"}
+              src={"/images/slide-3.webp"}
+              loading="lazy"
               alt="gallery img 1"
               width={150}
               height={150}
               className="w-1/2 lg:w-1/3 rounded-lg p-1"
             />
             <Image
-              src={"/images/slide1.jpg"}
+              src={"/images/slide-1.webp"}
+              loading="lazy"
               alt="gallery img 1"
               width={150}
               height={150}
               className="w-1/2 lg:w-1/3 rounded-lg p-1"
             />
             <Image
-              src={"/images/slide3.jpg"}
+              src={"/images/slide-3.webp"}
+              loading="lazy"
               alt="gallery img 1"
               width={150}
               height={150}

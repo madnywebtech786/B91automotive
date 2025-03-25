@@ -60,7 +60,8 @@ export default function WorkingProcess() {
           <div className="w-full lg:w-1/3 p-10 ">
             <div className="mx-auto w-2/3 lg:w-full animate-spin-custom-4">
               <Image
-                src="/images/tyre.png"
+                loading="lazy"
+                src="/images/tyre.webp"
                 alt="Process Image"
                 width={400}
                 height={400}
