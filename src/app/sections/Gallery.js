@@ -10,14 +10,12 @@ const images = [
   { id: 4, src: "/images/slide1.jpg", size: "col-span-1" },
   { id: 5, src: "/images/slide3.jpg", size: "col-1 lg:col-span-2" },
   { id: 6, src: "/images/slide2.jpg", size: "col-span-1" },
-  { id: 7, src: "/images/slide3.jpg", size: "col-1 lg:col-span-2" },
-  { id: 8, src: "/images/slide2.jpg", size: "col-span-1" },
-  { id: 9, src: "/images/slide1.jpg", size: "hidden lg:block lg:col-span-1" },
+
 ];
 
 export default function Gallery() {
   return (
-    <div className="w-full px-4 lg:px-10 pt-20 lg:pt-40 pb-20">
+    <div className="w-full px-4 lg:px-10 pt-20 lg:pt-40 pb-20" id="gallery">
       <div className="mb-10">
         <p className="text-red-500 font-semibold uppercase flex items-center justify-center gap-2 mb-3">
           <div className="w-10 h-0.5 bg-red-500"></div>

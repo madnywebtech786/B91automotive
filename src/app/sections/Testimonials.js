@@ -14,63 +14,41 @@ import TestimonialCard from "../components/TestimonialCard";
 export default function Testimonials() {
   const testimonials = [
     {
-      title: "Good Services",
+      title: "Exceptional service and professionalism!",
       rating: 5,
       quote:
-        "Collecting feedback from clients is a critical part of running a successful service business. It helps you understand your customers better.",
-      name: "Darlene Robertson",
-      role: "Founder & CEO",
-      avatar: "/images/avatars/darlene.png",
+        "B91 Automotive exceeded my expectations. The team was knowledgeable ,friendly, and fixed my car quickly. I won’t go anywhere else for repairs!",
+      name: "Michael R",
+      role: "Happy Client",
     },
     {
-      title: "Impressive Support",
-      rating: 4,
-      quote:
-        "Ask satisfied clients to provide written or video testimonials that can be featured on your website and social media channels.",
-      name: "Darrell Steward",
-      role: "UX Designer",
-      avatar: "/images/avatars/darrell.png",
-    },
-    {
-      title: "Amazing Results",
+      title: "Fast, reliable, and trustworthy.",
       rating: 5,
       quote:
-        "Remember that the key to collecting and utilizing customer feedback effectively is to listen carefully to your clients.",
-      name: "Ronald Richards",
-      role: "Web Developer",
-      avatar: "/images/avatars/ronald.png",
+        "I had an urgent issue with my car, and B91 Automotive handled it with speed and efficiency. Their honesty and attention to detail made all the difference!",
+      name: "Jessica L",
+      role: "Happy Client",
     },
     {
-      title: "Good Services",
+      title: "Best auto service experience I've had!",
       rating: 5,
       quote:
-        "Collecting feedback from clients is a critical part of running a successful service business. It helps you understand your customers better.",
-      name: "Darlene Robertson",
-      role: "Founder & CEO",
-      avatar: "/images/avatars/darlene.png",
+        "From the moment I walked in, I felt valued as a customer. They explained everything clearly and delivered high-quality work. Highly recommend!",
+      name: "David S",
+      role: "Happy Client",
     },
     {
-      title: "Impressive Support",
-      rating: 4,
-      quote:
-        "Ask satisfied clients to provide written or video testimonials that can be featured on your website and social media channels.",
-      name: "Darrell Steward",
-      role: "UX Designer",
-      avatar: "/images/avatars/darrell.png",
-    },
-    {
-      title: "Amazing Results",
+      title: "Top-notch quality and customer care.",
       rating: 5,
       quote:
-        "Remember that the key to collecting and utilizing customer feedback effectively is to listen carefully to your clients.",
-      name: "Ronald Richards",
-      role: "Web Developer",
-      avatar: "/images/avatars/ronald.png",
+        "B91 Automotive went above and beyond to ensure my car was in perfect condition. Their team is professional, and their prices are fair. I’ll definitely be back!",
+      name: "Sophia M",
+      role: "Happy Client",
     },
   ];
 
   return (
-    <div className="p-4 py-20 lg:p-20 pb-0 flex flex-col items-end testimonials relative bg-red-50">
+    <div className="p-4 py-20 lg:p-20 pb-0 flex flex-col items-end testimonials relative bg-red-50" id="testimonials">
       <div className="w-full lg:w-4/5 flex flex-col  items-end relative z-20">
         <div className="flex w-full lg:w-2/3 flex-col">
           <p className="text-red-500 font-semibold uppercase flex items-center  gap-2 mb-3">

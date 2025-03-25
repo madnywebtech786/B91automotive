@@ -17,11 +17,10 @@ import React from "react";
 
 export default function TestimonialCard({
   title = "Good Services",
-  rating = 4,
+  rating = 5,
   quote,
   name,
   role,
-  avatar,
 }) {
   // Helper function to render star icons
   const renderStars = (count) => {
@@ -76,15 +75,7 @@ export default function TestimonialCard({
       <div className="absolute bottom-8 left-4">
         {/* Author Info above the wave */}
         <div className=" flex items-center gap-3">
-          <div className="w-14 h-14  border-2 border-white">
-            <Image
-              src={"/images/slide1.jpg"}
-              alt={name}
-              width={106}
-              height={106}
-              className="rounded-full w-full h-full"
-            />
-          </div>
+
           <div className="text-primary">
             <p className="font-bold text-sm">{name}</p>
             <p className="text-xs opacity-90">{role}</p>

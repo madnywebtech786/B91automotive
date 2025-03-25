@@ -24,7 +24,7 @@ export default function WorkingProcess() {
               <div>
                 <h3 className="text-xl font-bold">Identify Problems</h3>
                 <p className=" max-w-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  We diagnose issues using advanced tools and expertise.
                 </p>
               </div>
               <div className="processIconLeft relative z-20">
@@ -41,7 +41,7 @@ export default function WorkingProcess() {
               <div>
                 <h3 className="text-xl font-bold">Start Servicing</h3>
                 <p className=" max-w-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Repairs and maintenance are done with quality parts.
                 </p>
               </div>
               <div className="processIconLeft relative z-20">
@@ -84,7 +84,7 @@ export default function WorkingProcess() {
               <div>
                 <h3 className="text-xl font-bold">Trial For Make Sure</h3>
                 <p className=" max-w-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  We ensure everything runs smoothly before delivery.
                 </p>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function WorkingProcess() {
               <div>
                 <h3 className="text-xl font-bold">Deliver Service</h3>
                 <p className=" max-w-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Your vehicle is returned in top condition.
                 </p>
               </div>
             </div>

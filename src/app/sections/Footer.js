@@ -61,13 +61,13 @@ export default function Footer() {
           <Link href="/" className="underline-animation-white w-max">
             Home
           </Link>
-          <Link href="/about-us" className="underline-animation-white w-max">
+          <Link href="/About-us" className="underline-animation-white w-max">
             About Us
           </Link>
-          <Link href="/services" className="underline-animation-white w-max">
-            Our Services
+          <Link href="/#testimonials" className="underline-animation-white w-max">
+            Testimonials
           </Link>
-          <Link href="/contact-us" className="underline-animation-white w-max">
+          <Link href="/Contact-us" className="underline-animation-white w-max">
             Contact Us
           </Link>
         </div>
@@ -86,8 +86,8 @@ export default function Footer() {
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="text-base font-bold ">Hotline</h3>
-                <Link href={"tel:+14034026723"}>
-                  <p className="text-xs">+1 (403) 402-6723</p>
+                <Link href={"tel:+14038918548"}>
+                  <p className="text-xs">4038918548</p>
                 </Link>
               </div>
             </div>
@@ -102,8 +102,8 @@ export default function Footer() {
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="text-base font-bold ">Official Email</h3>
-                <Link href={"mailto:info@example.com"}>
-                  <p className="text-xs">info@example.com</p>
+                <Link href={"mailto:support@b91automotive.com"}>
+                  <p className="text-xs">support@b91automotive.com</p>
                 </Link>
               </div>
             </div>
@@ -119,7 +119,9 @@ export default function Footer() {
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="text-base font-bold ">Our Location</h3>
-                <p className="text-xs w-2/3">6391 Elgin St. Celina, 10299</p>
+                <p className="text-xs w-2/3">
+                  5815b 36 St SE, Calgary, AB T2C 2J1
+                </p>
               </div>
             </div>
           </div>

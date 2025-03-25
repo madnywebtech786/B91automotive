@@ -27,12 +27,12 @@ export default function Navbar() {
     <div>
       <div className="fixed top-0 left-0 z-50 w-full hidden xl:flex">
         <div className="w-1/5">
-          <div className="bg-white border-b border-primary-4 border-r-4 border-primary rounded-br-xl p-5 py-8 flex items-center justify-center">
+          <div className="bg-white border-b-4 border-primary-4 border-r-4 border-primary rounded-br-xl p-4 py-6 flex items-center justify-center">
             <Image
               src={"/images/logo.jpeg"}
               alt="logo"
-              width={300}
-              height={300}
+              width={250}
+              height={250}
             />
           </div>
         </div>
@@ -80,36 +80,54 @@ export default function Navbar() {
                       Engine & Transmission Diagnostics and Repairs
                     </Link>
                     <Link
-                      href="/Services/autobody-restoration-and-collision-repair"
+                      href="/Services/autobody-paint-services"
                       className="block px-4 py-2 hover:bg-primary/30 capitalize border-b"
                     >
-                      Autobody Restoration & Collision Repair
+                      Autobody & Paint Services
                     </Link>
                     <Link
-                      href="/Services/insurance-claims-assistance-and-repair-coordination"
+                      href="/Services/insurance-claims"
                       className="block px-4 py-2 hover:bg-primary/30 capitalize border-b"
                     >
-                      Insurance Claims Assistance & Repair Coordination
+                      Insurance Claims Assistance
                     </Link>
                     <Link
-                      href="/Services/windshield-replacement-and-chip-repair"
+                      href="/Services/windshield-replacement-repair"
                       className="block px-4 py-2 hover:bg-primary/30 capitalize border-b"
                     >
-                      Windshield Replacement & Chip Repair
+                      Windshield Replacement & Repair
                     </Link>
                     <Link
-                      href="/Services/premium-new-and-certified-pre-owned-automotive-parts"
+                      href="/Services/new-used-automotive-parts"
+                      className="block px-4 py-2 hover:bg-primary/30 capitalize border-b"
+                    >
+                      New & Used Automotive Parts
+                    </Link>{" "}
+                    <Link
+                      href="/Services/new-used-autobody-parts"
                       className="block px-4 py-2 hover:bg-primary/30 capitalize rounded-b-md"
                     >
-                      Premium New & Certified Pre-Owned Automotive Parts
+                      New & Used Autobody Parts
                     </Link>
                   </div>
                 </div>
                 <Link
+                  href={"/#gallery"}
+                  className="font-bold text-lg hover:text-primary hover:scale-105 duration-300"
+                >
+                  Gallery
+                </Link>
+                <Link
+                  href={"/#testimonials"}
+                  className="font-bold text-lg hover:text-primary hover:scale-105 duration-300"
+                >
+                  Testimonials
+                </Link>
+                <Link
                   href={"/Contact-us"}
                   className="font-bold text-lg hover:text-primary hover:scale-105 duration-300"
                 >
-                  Contact
+                  Contact Us
                 </Link>
               </div>
 
@@ -123,10 +141,10 @@ export default function Navbar() {
                 <div className="flex flex-col gap-1">
                   <p>Need help?</p>
                   <Link
-                    href={"tel:+13075550133"}
+                    href={"tel:+14038918548"}
                     className="text-base font-bold hover:text-primary duration-300"
                   >
-                    (307) 555-0133{" "}
+                    4038918548
                   </Link>
                 </div>
               </div>
@@ -217,49 +235,66 @@ export default function Navbar() {
                   Engine & Transmission Diagnostics and Repairs
                 </Link>
                 <Link
-                  href="/Services/autobody-restoration-and-collision-repair"
+                  href="/Services/autobody-paint-services"
                   className="block px-4 py-3"
                   onClick={closeMobileNav}
                 >
-                  Autobody Restoration & Collision Repair
+                  Autobody & Paint Services
                 </Link>
                 <Link
-                  href="/Services/insurance-claims-assistance-and-repair-coordination"
+                  href="/Services/insurance-claims"
                   className="block px-4 py-3"
                   onClick={closeMobileNav}
                 >
-                  Insurance Claims Assistance & Repair Coordination
+                  Insurance Claims Assistance
                 </Link>
                 <Link
-                  href="/Services/windshield-replacement-and-chip-repair"
+                  href="/Services/windshield-replacement-repair"
                   className="block px-4 py-3"
                   onClick={closeMobileNav}
                 >
-                  Windshield Replacement & Chip Repair
+                  Windshield Replacement & Repair
                 </Link>
                 <Link
-                  href="/Services/premium-new-and-certified-pre-owned-automotive-parts"
+                  href="/Services/new-used-automotive-parts"
                   className="block px-4 py-3"
                   onClick={closeMobileNav}
                 >
-                  Premium New & Certified Pre-Owned Automotive Parts
+                  New & Used Automotive Parts
+                </Link>{" "}
+                <Link
+                  href="/Services/new-used-autobody-parts"
+                  className="block px-4 py-3"
+                  onClick={closeMobileNav}
+                >
+                  New & Used Autobody Parts
                 </Link>
               </div>
             </div>
           </div>
 
           <Link
-            href="/Contact-us"
+            href="/#gallery"
             className="text-xl font-medium w-full text-start py-4"
+            onClick={closeMobileNav}
+          >
+            Gallery
+          </Link>
+
+          <Link
+            href="/testimonials"
+            className="text-xl font-medium w-full text-start py-4"
+            onClick={closeMobileNav}
+          >
+            Testimonials
+          </Link>
+          <Link
+            href="/Contact-us"
+            className="w-full flex justify-center"
             onClick={closeMobileNav}
           >
             Contact Us
           </Link>
-          <Link
-            href="/contact-us"
-            className="w-full flex justify-center"
-            onClick={closeMobileNav}
-          ></Link>
         </div>
 
         {/* Social Links */}

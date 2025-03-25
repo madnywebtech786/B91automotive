@@ -24,6 +24,10 @@
   }
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -191,7 +195,7 @@ body {
   left: 40px;
   width: 40%;
   height: 100%;
-  background-image: url("/images/slide1.jpg");
+  background-image: url("/images/testimonials.png");
   background-size: cover;
   z-index: 0;
 

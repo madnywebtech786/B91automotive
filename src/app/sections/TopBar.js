@@ -13,7 +13,7 @@ export default function TopBar() {
             height={20}
             className="w-4 lg:w-5 h-4 lg:h-5 "
           />
-          info@example.com
+          support@b91automotive.com
         </p>
         <p className="text-white text-xxs lg:text-base font-bold flex items-center gap-1 lg:gap-3">
           <Image
@@ -23,7 +23,7 @@ export default function TopBar() {
             height={23}
             className="w-4 lg:w-5 h-4 lg:h-5 "
           />
-          6391 Elgin St. Celina, 10299
+          5815b 36 St SE, Calgary, AB T2C 2J1
         </p>
         <p className="text-white text-xxs lg:text-base font-bold flex items-center gap-1 lg:gap-3">
           <Image
@@ -33,7 +33,7 @@ export default function TopBar() {
             height={20}
             className="w-4 lg:w-5 h-4 lg:h-5 "
           />
-          Sunday - Friday
+          Monday - Saturday
         </p>
       </div>
       <div className="hidden md:flex bg-white/20 gap-5 p-4">

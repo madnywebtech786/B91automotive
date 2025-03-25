@@ -35,7 +35,7 @@ export default function ContactSection({singlePage=false}) {
                   />
                 </span>
                 <div>
-                  <p className="font-semibold">Mon - Fri: 9AM - 6PM</p>
+                  <p className="font-semibold">Mon - Sat: 9AM - 5PM</p>
                   <p className="text-sm">Business Hours</p>
                 </div>
               </div>
@@ -50,7 +50,7 @@ export default function ContactSection({singlePage=false}) {
                   />
                 </span>
                 <div>
-                  <p className="font-semibold">+1 (555) 123-4567</p>
+                  <p className="font-semibold">4038918548</p>
                   <p className="text-sm">Phone Number</p>
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function ContactSection({singlePage=false}) {
                   />
                 </span>
                 <div>
-                  <p className="font-semibold">support@example.com</p>
+                  <p className="font-semibold">support@b91automotive.com</p>
                   <p className="text-sm">Email Address</p>
                 </div>
               </div>
@@ -80,7 +80,7 @@ export default function ContactSection({singlePage=false}) {
                   />
                 </span>
                 <div>
-                  <p className="font-semibold">123 Main St, City, Country</p>
+                  <p className="font-semibold">5815b 36 St SE, Calgary, AB T2C 2J1</p>
                   <p className="text-sm">Our Location</p>
                 </div>
               </div>

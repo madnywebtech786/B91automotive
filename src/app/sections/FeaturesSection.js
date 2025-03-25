@@ -6,11 +6,11 @@ const FeaturesSection = () => {
       {/* Left Side - Image */}
       <div className="w-full md:w-1/2 relative featureSide">
         <Image
-          src="/images/slide1.jpg"
+          src="/images/features.png"
           alt="Mechanic Working"
           width={600}
           height={400}
-          className="w-full h-full"
+          className="w-full h-full max-h-[500px]"
         />
       </div>
 
@@ -32,8 +32,8 @@ const FeaturesSection = () => {
             <div>
               <h3 className="text-lg font-semibold">Trusted & Quality Work</h3>
               <p className="text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                the dolor sit amet, consectetur.
+                Our expert technicians provide reliable, high-quality service to
+                ensure your vehicle runs at its best
               </p>
             </div>
           </div>
@@ -48,8 +48,8 @@ const FeaturesSection = () => {
             <div>
               <h3 className="text-lg font-semibold">Fast Service Delivery</h3>
               <p className="text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                the dolor sit amet, consectetur.
+                We prioritize efficiency, offering quick turnaround times to get
+                you back on the road with minimal wait.
               </p>
             </div>
           </div>
@@ -64,8 +64,8 @@ const FeaturesSection = () => {
             <div>
               <h3 className="text-lg font-semibold">Money Back Guarantee</h3>
               <p className="text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                the dolor sit amet, consectetur.
+                From routine maintenance to complex repairs, we deliver
+                cutting-edge solutions tailored to your vehicle’s needs.
               </p>
             </div>
           </div>

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 import React from "react";
 
@@ -45,12 +46,16 @@ export default function KnowAbout() {
           <div className="w-10 h-0.5 bg-red-500"></div>
           Know About Us
         </p>
-        <h2 className="text-3xl lg:text-6xl font-bold text-gray-900 mt-2">
-          Where Expertise Meets Every Engine
+        <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mt-2">
+          Calgaryʼs Trusted Auto Repair & Autobody Experts
         </h2>
         <p className="text-gray-600 mt-4 max-w-lg">
-          Et purus duis sollicitudin dignissim habitant. Egestas nulla quis
-          venenatis cras sed eu massa eu faucibus. Una fusce.
+          At <strong> B91 Automotic</strong>, we provide top-rated auto repair
+          and autobody services in Calgary, ensuring your vehicle runs smoothly
+          and looks its best. Whether you need engine diagnostics, transmission
+          repair, collision restoration, or windshield replacement, our team of
+          certified professionals delivers high quality, affordable, and
+          reliable solutions
         </p>
         <ul className="mt-6 space-y-3 text-gray-700">
           <li className="flex items-center gap-4">
@@ -60,7 +65,7 @@ export default function KnowAbout() {
               width={20}
               height={20}
             />{" "}
-            Professional Car Repair Services
+            Expert Auto Repair & Maintenance
           </li>
           <li className="flex items-center gap-4">
             <Image
@@ -69,7 +74,7 @@ export default function KnowAbout() {
               width={20}
               height={20}
             />{" "}
-            A car repair is a service provided to fix
+            Precision Autobody & Paintwork
           </li>
           <li className="flex items-center gap-4">
             <Image
@@ -78,7 +83,7 @@ export default function KnowAbout() {
               width={20}
               height={20}
             />{" "}
-            Get Your Car Fixed Right Away Car Repair
+            Hassle-Free Insurance Claims
           </li>
           <li className="flex items-center gap-4">
             <Image
@@ -87,7 +92,7 @@ export default function KnowAbout() {
               width={20}
               height={20}
             />{" "}
-            Quick and Efficient Car Repairs
+            New & Used Auto Parts
           </li>
         </ul>
         <div className="hidden lg:block absolute bottom-0 right-5 bg-red-500/80 p-8 py-12 text-center  experience text-white">
@@ -104,9 +109,12 @@ export default function KnowAbout() {
           </div>
         </div>
         <div className="mt-6 flex items-center gap-6">
-          <button className="bg-red-500 text-white text-sm lg:text-base px-4 lg:px-6 py-3 rounded-lg font-bold hover:bg-red-600 transition">
-            Read More →
+        <Link href={'tel:4038918548'} >
+
+          <button className="cursor-pointer bg-red-500 text-white text-sm lg:text-base px-4 lg:px-6 py-3 rounded-lg font-bold hover:bg-red-600 transition">
+            Contact Now
           </button>
+          </Link>
         </div>
       </div>
     </div>

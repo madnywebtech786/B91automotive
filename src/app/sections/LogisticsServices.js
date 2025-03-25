@@ -7,7 +7,7 @@ const LogisticsServices = () => {
       description:
         "Bicycle freight services can be provided by specialized logistics.",
       icon: "/images/icons/bicycle.svg",
-      bgImage: "/images/slide1.jpg",
+      bgImage: "/images/bicycle.png",
       color: "bg-white",
       textColor: "text-black",
     },
@@ -16,7 +16,7 @@ const LogisticsServices = () => {
       description:
         "Air freight offers several advantages over other modes of transportation.",
       icon: "/images/icons/airplane.svg",
-      bgImage: "/images/slide1.jpg",
+      bgImage: "/images/air.png",
       color: "bg-white",
       textColor: "text-black",
     },
@@ -25,7 +25,7 @@ const LogisticsServices = () => {
       description:
         "Road freight can be carried out by various vehicles flatbed trucks.",
       icon: "/images/icons/truck.svg",
-      bgImage: "/images/slide1.jpg",
+      bgImage: "/images/road.png",
       color: "bg-white",
       textColor: "text-black",
     },
