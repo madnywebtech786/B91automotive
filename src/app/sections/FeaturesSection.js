@@ -23,7 +23,7 @@ const FeaturesSection = () => {
         <div className="space-y-10">
           <div className="flex items-start gap-4">
             <Image
-              src="/images/icons/repair.svg"
+              src="/images/icons/Trusted.svg"
               alt="Icon"
               width={50}
               height={50}
@@ -39,7 +39,7 @@ const FeaturesSection = () => {
           </div>
           <div className="ml-10 flex items-start gap-4">
             <Image
-              src="/images/icons/repair.svg"
+              src="/images/icons/Fast Service.svg"
               alt="Icon"
               width={50}
               height={50}
@@ -55,7 +55,7 @@ const FeaturesSection = () => {
           </div>
           <div className="ml-20 flex items-start gap-4">
             <Image
-              src="/images/icons/repair.svg"
+              src="/images/icons/Money Back.svg"
               alt="Icon"
               width={50}
               height={50}

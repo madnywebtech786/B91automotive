@@ -27,7 +27,7 @@ export default function SupportSection() {
       <div className="mx-auto lg:absolute lg:-bottom-1/5 left-[13%] w-2/3 lg:w-3/4 bg-primary rounded-2xl p-2 lg:p-6 flex flex-col lg:flex-row justify-center items-center text-center">
         <div className="flex flex-col items-center gap-4 px-4 lg:px-16  border-b lg:border-b-0 lg:border-r py-10 lg:py-0 border-dashed border-white">
           <Image
-            src="/images/icons/repair.svg"
+            src="/images/icons/Happy Customers.svg"
             alt="Clients"
             width={50}
             height={50}
@@ -39,7 +39,7 @@ export default function SupportSection() {
         </div>
         <div className="flex flex-col items-center gap-4 px-4 lg:px-16 border-b lg:border-b-0 lg:border-r py-10 lg:py-0 border-dashed border-white">
           <Image
-            src="/images/icons/repair.svg"
+            src="/images/icons/Major Auto.svg"
             alt="Branches"
             width={50}
             height={50}
@@ -51,7 +51,7 @@ export default function SupportSection() {
         </div>
         <div className="flex flex-col items-center gap-4 px-4 lg:px-16 border-b lg:border-b-0 lg:border-r py-10 lg:py-0 border-dashed border-white">
           <Image
-            src="/images/icons/repair.svg"
+            src="/images/icons/Hours of Work.svg"
             alt="Staffs"
             width={50}
             height={50}

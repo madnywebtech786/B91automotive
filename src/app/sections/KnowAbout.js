@@ -96,24 +96,25 @@ export default function KnowAbout() {
           </li>
         </ul>
         <div className="hidden lg:block absolute bottom-0 right-5 bg-red-500/80 p-8 py-12 text-center  experience text-white">
-          <div className="flex flex-col items-center gap-3">
+          <div className="flex flex-col items-center gap-2">
             <Image
-              src={"/images/icons/repair.svg"}
+              src={"/images/icons/experience.svg"}
               alt="icon"
-              width={45}
-              height={45}
+              width={70}
+              height={70}
               className="mx-auto"
             />
-            <p className="text-4xl font-bold ">25+</p>
-            <p className=" text-lg">Years of experience</p>
+            <div className="flex flex-col gap-1">
+              <p className="text-4xl font-bold ">25+</p>
+              <p className=" text-lg">Years of experience</p>
+            </div>
           </div>
         </div>
         <div className="mt-6 flex items-center gap-6">
-        <Link href={'tel:4038918548'} >
-
-          <button className="cursor-pointer bg-red-500 text-white text-sm lg:text-base px-4 lg:px-6 py-3 rounded-lg font-bold hover:bg-red-600 transition">
-            Contact Now
-          </button>
+          <Link href={"tel:4038918548"}>
+            <button className="cursor-pointer bg-red-500 text-white text-sm lg:text-base px-4 lg:px-6 py-3 rounded-lg font-bold hover:bg-red-600 transition">
+              Contact Now
+            </button>
           </Link>
         </div>
       </div>
