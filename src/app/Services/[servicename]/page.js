@@ -105,7 +105,7 @@ export default function ServicePage({ params }) {
 
   return (
     <div>
-      <Breadcrumb name={"Services"} />
+      <Breadcrumb name={servicename} />
 
       <div className="p-4 lg:p-20 lg:pb-0">
         <div className="relative mb-20 rounded-2xl shadow-2xl bg-white flex flex-col md:flex-row gap-0 lg:gap-20 overflow-hidden">
