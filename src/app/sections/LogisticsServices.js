@@ -9,7 +9,7 @@ const LogisticsServices = () => {
       description:
         "We offer advanced diagnostics and repairs to keep your engine and transmission running smoothly.",
       icon: "/images/icons/Engine & Transmission.svg",
-      bgImage: "/images/slide1.jpg",
+      bgImage: "/images/Engine & Transmission Diagnostics and Repairs.png",
       color: "bg-white",
       textColor: "text-black",
     },
@@ -19,7 +19,7 @@ const LogisticsServices = () => {
       description:
         "From collision repair to custom paint jobs, we restore your vehicle’s exterior to perfection.",
       icon: "/images/icons/Autobody & Paint.svg",
-      bgImage: "/images/slide1.jpg",
+      bgImage: "/images/Autobody & Paint Services.png",
       color: "bg-white",
       textColor: "text-black",
     },
@@ -29,7 +29,7 @@ const LogisticsServices = () => {
       description:
         "We handle insurance paperwork and repairs, ensuring a hassle-free claims process.",
       icon: "/images/icons/Insurance Claims.svg",
-      bgImage: "/images/slide1.jpg",
+      bgImage: "/images/Insurance Claims Assistance.png",
       color: "bg-white",
       textColor: "text-black",
     },
@@ -39,7 +39,7 @@ const LogisticsServices = () => {
       description:
         "Fast, reliable windshield repairs and replacements to keep your vision clear and safe.",
       icon: "/images/icons/Windshield Replacement.svg",
-      bgImage: "/images/slide1.jpg",
+      bgImage: "/images/Windshield Replacement & Repair.png",
       color: "bg-white",
       textColor: "text-black",
     },
@@ -49,7 +49,7 @@ const LogisticsServices = () => {
       description:
         "High-quality new and used auto parts to keep your vehicle running at its best.",
       icon: "/images/icons/New & Used Automotive.svg",
-      bgImage: "/images/slide1.jpg",
+      bgImage: "/images/New & Used Automotive Parts.png",
       color: "bg-white",
       textColor: "text-black",
     },
@@ -59,12 +59,11 @@ const LogisticsServices = () => {
       description:
         "Affordable autobody parts to restore your vehicle’s exterior with OEM-quality options.",
       icon: "/images/icons/New & Used Autobody.svg",
-      bgImage: "/images/slide1.jpg",
+      bgImage: "/images/New & Used Autobody Parts.png",
       color: "bg-white",
       textColor: "text-black",
     },
   ];
-  
 
   return (
     <section className="p-4 lg:p-20 !pb-40 bg-red-50">
@@ -81,9 +80,15 @@ const LogisticsServices = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative w-full bg-cover bg-center rounded-lg min-h-[300px] group"
-            style={{ backgroundImage: `url(${service.bgImage})` }}
+            className="relative w-full rounded-lg min-h-[300px] group "
           >
+            <Image
+              src={service.bgImage}
+              alt={service.title}
+              layout="fill"
+              objectFit="cover"
+              className="absolute inset-0 w-full h-full rounded-xl"
+            />
             <div
               className={`absolute -bottom-1/3 left-0 right-0 p-5 ${service.color} ${service.textColor} rounded-lg m-4 group-hover:bg-red-500 duration-300`}
             >
@@ -98,7 +103,10 @@ const LogisticsServices = () => {
               <div className="group-hover:text-white mt-6 duration-300">
                 <h3 className="font-bold text-lg">{service.title}</h3>
                 <p className="text-sm mt-2">{service.description}</p>
-                <Link href={`/Services/${service.slug}`} className="text-sm font-bold mt-4 inline-block">
+                <Link
+                  href={`/Services/${service.slug}`}
+                  className="text-sm font-bold mt-4 inline-block"
+                >
                   READ MORE →
                 </Link>
               </div>

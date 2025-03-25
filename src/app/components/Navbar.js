@@ -226,7 +226,7 @@ export default function Navbar() {
                 transitionProperty: "max-height",
               }}
             >
-              <div className="flex flex-col bg-primary/30 text-base rounded-lg">
+              <div className="flex flex-col bg-primary/10 text-base rounded-lg">
                 <Link
                   href="/Services/engine-transmission-diagnostics-and-repairs"
                   className="block px-4 py-3"
@@ -275,7 +275,7 @@ export default function Navbar() {
 
           <Link
             href="/#gallery"
-            className="text-xl font-medium w-full text-start py-4"
+            className="text-xl font-medium border-b border-primary w-full text-start py-4"
             onClick={closeMobileNav}
           >
             Gallery
@@ -283,14 +283,14 @@ export default function Navbar() {
 
           <Link
             href="/testimonials"
-            className="text-xl font-medium w-full text-start py-4"
+            className="text-xl font-medium border-b border-primary w-full text-start py-4"
             onClick={closeMobileNav}
           >
             Testimonials
           </Link>
           <Link
             href="/Contact-us"
-            className="w-full flex justify-center"
+            className="text-xl font-medium w-full text-start py-4"
             onClick={closeMobileNav}
           >
             Contact Us

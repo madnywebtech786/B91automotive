@@ -2,6 +2,7 @@ import React from "react";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import WorkingProcess from "@/app/sections/WorkingProcess";
 import Image from "next/image";
+import { notFound } from "next/navigation"; // Import Next.js navigation for handling 404
 
 
 // A static list of services. You can move this to a separate file or fetch it from an API.
@@ -11,7 +12,7 @@ const services = [
     slug: "engine-transmission-diagnostics-and-repairs",
     name: "Engine & Transmission Diagnostics and Repairs",
     desc: "Your vehicle’s engine and transmission are its most critical components, responsible for power, performance, and fuel efficiency. At B91 Automotic, we specialize in advanced diagnostics and expert repairs to ensure your car operates smoothly. Using state-of-the-art scanning tools, we pinpoint issues with precision and provide cost-effective solutions to prevent further damage. Whether it’s a minor engine tune-up or a complete transmission rebuild, our certified technicians are here to help.",
-    img: "/images/slide1.jpg",
+    img: "/images/Engine & Transmission Diagnostics and Repairs.png",
     features: [
       "Comprehensive engine diagnostics and performance tuning",
       "Transmission fluid change, repair, and complete rebuilds",
@@ -25,7 +26,7 @@ const services = [
     slug: "autobody-paint-services",
     name: "Autobody & Paint Services",
     desc: "A vehicle’s exterior is just as important as its performance. Whether your car has suffered collision damage, minor dents, or paint fading, our expert autobody and paint specialists can restore it to like-new condition. We use high-quality paints, precise color matching, and professional repair techniques to fix damages and enhance the aesthetic appeal of your vehicle.",
-    img: "/images/slide1.jpg",
+    img: "/images/Autobody & Paint Services.png",
     features: [
       "Full collision repair and frame straightening for accident-damaged vehicles",
       "Removal of scratches, dents, rust spots, and paint imperfections",
@@ -39,7 +40,7 @@ const services = [
     slug: "insurance-claims",
     name: "Insurance Claims Assistance",
     desc: "Filing an insurance claim after an accident can be a frustrating and time-consuming process. At B91 Automotic, we streamline the experience by handling all paperwork, negotiations, and repair work on your behalf. Our team works closely with major insurance providers to ensure quick claim approvals and hassle-free repairs.",
-    img: "/images/slide1.jpg",
+    img: "/images/Insurance Claims Assistance.png",
     features: [
       "Complete accident damage assessment and repair estimates",
       "Direct communication with your insurance company to speed up approvals",
@@ -53,7 +54,7 @@ const services = [
     slug: "windshield-replacement-repair",
     name: "Windshield Replacement & Repair",
     desc: "A damaged windshield is more than just a cosmetic issue—it’s a serious safety hazard. Even a small crack can weaken your vehicle’s structural integrity and obstruct visibility. At B91 Automotic, we offer fast, affordable, and high-quality windshield repairs and replacements using OEM-grade glass.",
-    img: "/images/slide1.jpg",
+    img: "/images/Windshield Replacement & Repair.png",
     features: [
       "Chip and crack repairs to prevent further damage",
       "Full windshield replacements using OEM and aftermarket glass",
@@ -67,7 +68,7 @@ const services = [
     slug: "new-used-automotive-parts",
     name: "New & Used Automotive Parts",
     desc: "Need affordable replacement parts for your vehicle? We offer a wide selection of new and used auto parts, helping you find high-quality components at competitive prices. Whether you're replacing a damaged engine, upgrading suspension parts, or fixing electrical issues, we provide tested and inspected parts to guarantee reliability and performance.",
-    img: "/images/slide1.jpg",
+    img: "/images/New & Used Automotive Parts.png",
     features: [
       "Engines, transmissions, and drivetrain components",
       "Brakes, suspensions, and exhaust system parts",
@@ -81,7 +82,7 @@ const services = [
     slug: "new-used-autobody-parts",
     name: "New & Used Autobody Parts",
     desc: "Looking to replace autobody parts without breaking the bank? We provide a comprehensive selection of new and used body parts, allowing you to restore your vehicle’s exterior affordably. Whether you need a replacement fender, bumper, or headlights, we stock high-quality OEM and aftermarket options for all major makes and models.",
-    img: "/images/slide6.jpg",
+    img: "/images/New & Used Autobody Parts.png",
     features: [
       "Bumpers, hoods, and fenders to fix exterior damage",
       "Side mirrors, headlights, taillights, and grilles for enhanced safety and style",
@@ -93,14 +94,17 @@ const services = [
 
 ];
 
-export default function ServicePage({ params }) {
-  // Extract the service slug from the route parameters.
-  const { servicename } = params;
-  // Find the service in our static array.
-  const service = services.find((s) => s.slug === servicename);
+export default async function ServicePage({ params }) {
+  const { servicename } = await params; // Await the params prop
+
+  // Decode the servicename to handle URL-encoded characters
+  const decodedServiceName = decodeURIComponent(servicename);
+
+  // Find the matching service
+  const service = services.find((s) => s.slug === decodedServiceName);
 
   if (!service) {
-    return <p>Service not found.</p>;
+    notFound(); // Render the 404 page if the service is not found
   }
 
   return (
