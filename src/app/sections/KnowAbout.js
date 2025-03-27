@@ -107,7 +107,7 @@ export default function KnowAbout() {
               className="mx-auto"
             />
             <div className="flex flex-col gap-1">
-              <p className="text-4xl font-bold ">25+</p>
+              <p className="text-4xl font-bold ">15+</p>
               <p className=" text-lg">Years of experience</p>
             </div>
           </div>

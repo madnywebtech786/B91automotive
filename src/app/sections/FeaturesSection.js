@@ -63,10 +63,9 @@ const FeaturesSection = () => {
               className="bg-primary p-2 rounded-lg"
             />
             <div>
-              <h3 className="text-lg font-semibold">Money Back Guarantee</h3>
+              <h3 className="text-lg font-semibold">Expert Solutions</h3>
               <p className="text-gray-400">
-                From routine maintenance to complex repairs, we deliver
-                cutting-edge solutions tailored to your vehicle’s needs.
+              We use cutting-edge technology to diagnose and fix any issue efficiently.
               </p>
             </div>
           </div>

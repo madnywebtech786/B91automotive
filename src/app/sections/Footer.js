@@ -18,10 +18,7 @@ export default function Footer() {
           </div>
           <div className="w-5/6">
             <p className="text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-              ex nam numquam fugit animi sunt, earum aspernatur, dicta
-              reprehenderit voluptas itaque voluptatem veritatis ipsam
-              perferendis sapiente laudantium vero eos. Consequuntur?
+            B91 Automotive INC – Delivering expert automotive repair and maintenance with precision, reliability, and a customer-first approach. Drive with confidence, we’ve got you covered!
             </p>
 
             <div className="flex justify-center lg:justify-start  my-5">
@@ -105,8 +102,8 @@ export default function Footer() {
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="text-base font-bold ">Official Email</h3>
-                <Link href={"mailto:support@b91automotive.com"}>
-                  <p className="text-xs">support@b91automotive.com</p>
+                <Link href={"mailto:info@b91autogroup.ca"}>
+                  <p className="text-xs">info@b91autogroup.ca</p>
                 </Link>
               </div>
             </div>

@@ -65,7 +65,7 @@ export default function ContactSection({singlePage=false}) {
                   />
                 </span>
                 <div>
-                  <p className="font-semibold">support@b91automotive.com</p>
+                  <p className="font-semibold">info@b91autogroup.ca</p>
                   <p className="text-sm">Email Address</p>
                 </div>
               </div>

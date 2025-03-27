@@ -13,7 +13,7 @@ export default function TopBar() {
             height={20}
             className="w-4 lg:w-5 h-4 lg:h-5 "
           />
-          support@b91automotive.com
+          info@b91autogroup.ca
         </p>
         <p className="text-white text-xxs lg:text-base font-bold flex items-center gap-1 lg:gap-3">
           <Image
