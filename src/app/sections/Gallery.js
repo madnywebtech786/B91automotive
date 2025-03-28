@@ -4,12 +4,12 @@ import Image from "next/image";
 import React from "react";
 
 const images = [
-  { id: 1, src: "/images/slide-1.webp", size: "col-1 lg:col-span-2" },
-  { id: 2, src: "/images/slide-2.webp", size: "col-span-1" },
-  { id: 3, src: "/images/slide-3.webp", size: "col-span-1" },
-  { id: 4, src: "/images/slide-1.webp", size: "col-span-1" },
-  { id: 5, src: "/images/slide-3.webp", size: "col-1 lg:col-span-2" },
-  { id: 6, src: "/images/slide-2.webp", size: "col-span-1" },
+  { id: 1, src: "/images/slide-1.jpg", size: "col-1 lg:col-span-2" },
+  { id: 2, src: "/images/slide-2.jpg", size: "col-span-1" },
+  { id: 3, src: "/images/slide-3.jpg", size: "col-span-1" },
+  { id: 4, src: "/images/slide-4.jpg", size: "col-span-1" },
+  { id: 5, src: "/images/slide-5.jpg", size: "col-1 lg:col-span-2" },
+  { id: 6, src: "/images/slide-6.jpg", size: "col-span-1" },
 ];
 
 export default function Gallery() {
@@ -34,8 +34,8 @@ export default function Gallery() {
               src={image.src}
               loading="lazy"
               alt={`Gallery image ${image.id}`}
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               className="w-full h-full object-cover"
             />
           </div>
