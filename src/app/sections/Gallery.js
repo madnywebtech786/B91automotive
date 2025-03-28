@@ -36,7 +36,7 @@ export default function Gallery() {
               alt={`Gallery image ${image.id}`}
               width={400}
               height={400}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover max-h-[500px]"
             />
           </div>
         ))}
