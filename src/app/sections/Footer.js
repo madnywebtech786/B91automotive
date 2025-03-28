@@ -130,7 +130,7 @@ export default function Footer() {
           <h2 className="text-xl font-bold uppercase ">Gallery</h2>
           <div className="w-2/3 lg:w-full  flex flex-wrap">
             <Image
-              src={"/images/about-1.webp"}
+              src={"/images/slide-1.jpg"}
               loading="lazy"
               alt="gallery img 1"
               width={150}
@@ -138,7 +138,7 @@ export default function Footer() {
               className="w-1/2 lg:w-1/3 rounded-lg p-1"
             />
             <Image
-              src={"/images/about-3.webp"}
+              src={"/images/slide-2.jpg"}
               loading="lazy"
               alt="gallery img 1"
               width={150}
@@ -146,7 +146,7 @@ export default function Footer() {
               className="w-1/2 lg:w-1/3 rounded-lg p-1"
             />
             <Image
-              src={"/images/about-2.webp"}
+              src={"/images/slide-3.jpg"}
               loading="lazy"
               alt="gallery img 1"
               width={150}
@@ -154,7 +154,7 @@ export default function Footer() {
               className="w-1/2 lg:w-1/3 rounded-lg p-1"
             />
             <Image
-              src={"/images/about-3.webp"}
+              src={"/images/slide-4.jpg"}
               loading="lazy"
               alt="gallery img 1"
               width={150}
@@ -162,7 +162,7 @@ export default function Footer() {
               className="w-1/2 lg:w-1/3 rounded-lg p-1"
             />
             <Image
-              src={"/images/about-1.webp"}
+              src={"/images/slide-5.jpg"}
               loading="lazy"
               alt="gallery img 1"
               width={150}
@@ -170,7 +170,7 @@ export default function Footer() {
               className="w-1/2 lg:w-1/3 rounded-lg p-1"
             />
             <Image
-              src={"/images/about-3.webp"}
+              src={"/images/slide-6.jpg"}
               loading="lazy"
               alt="gallery img 1"
               width={150}
