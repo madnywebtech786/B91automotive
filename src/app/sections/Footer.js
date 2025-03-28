@@ -135,7 +135,7 @@ export default function Footer() {
               alt="gallery img 1"
               width={150}
               height={150}
-              className="w-1/2 lg:w-1/3 rounded-lg p-1"
+              className="w-1/2 lg:w-1/3 h-32 rounded-lg p-1"
             />
             <Image
               src={"/images/slide-2.jpg"}
@@ -143,7 +143,7 @@ export default function Footer() {
               alt="gallery img 1"
               width={150}
               height={150}
-              className="w-1/2 lg:w-1/3 rounded-lg p-1"
+              className="w-1/2 lg:w-1/3 h-32 rounded-lg p-1"
             />
             <Image
               src={"/images/slide-3.jpg"}
@@ -151,7 +151,7 @@ export default function Footer() {
               alt="gallery img 1"
               width={150}
               height={150}
-              className="w-1/2 lg:w-1/3 rounded-lg p-1"
+              className="w-1/2 lg:w-1/3 h-32 rounded-lg p-1"
             />
             <Image
               src={"/images/slide-4.jpg"}
@@ -159,7 +159,7 @@ export default function Footer() {
               alt="gallery img 1"
               width={150}
               height={150}
-              className="w-1/2 lg:w-1/3 rounded-lg p-1"
+              className="w-1/2 lg:w-1/3 h-32 rounded-lg p-1"
             />
             <Image
               src={"/images/slide-5.jpg"}
@@ -167,7 +167,7 @@ export default function Footer() {
               alt="gallery img 1"
               width={150}
               height={150}
-              className="w-1/2 lg:w-1/3 rounded-lg p-1"
+              className="w-1/2 lg:w-1/3 h-32 rounded-lg p-1"
             />
             <Image
               src={"/images/slide-6.jpg"}
@@ -175,7 +175,7 @@ export default function Footer() {
               alt="gallery img 1"
               width={150}
               height={150}
-              className="w-1/2 lg:w-1/3 rounded-lg p-1"
+              className="w-1/2 lg:w-1/3 h-36  rounded-lg p-1"
             />
           </div>
         </div>

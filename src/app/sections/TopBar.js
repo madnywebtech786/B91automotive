@@ -51,13 +51,6 @@ export default function TopBar() {
           height={25}
           className="w-4 lg:w-6 h-4 lg:h-6"
         />
-        <Image
-          src={"/images/icons/XWhite.svg"}
-          alt="icon"
-          width={25}
-          height={25}
-          className="w-4 lg:w-6 h-4 lg:h-6"
-        />
       </div>
     </div>
   );

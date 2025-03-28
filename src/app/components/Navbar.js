@@ -312,18 +312,6 @@ export default function Navbar() {
             />
           </a>
           <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:opacity-80"
-          >
-            <img
-              src="/images/icons/XIcon.svg"
-              alt="Twitter"
-              className="h-6 w-6"
-            />
-          </a>
-          <a
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
