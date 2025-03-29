@@ -36,14 +36,14 @@ export default function TopBar() {
           Monday - Saturday
         </p> */}
         <p className="text-white text-xxs lg:text-base font-bold flex items-center gap-1 lg:gap-3">
-  <Image
-    src={"/images/icons/PhoneWhite.svg"}
-    alt="Phone icon"
+         <Image
+           src={"/images/icons/PhoneWhite.svg"}
+                 alt="Phone icon"
     width={20}
     height={20}
     className="w-4 lg:w-5 h-4 lg:h-5"
   />
-  <a href="tel:+1234567890" className="lg:text-lg hover:underline">
+  <a href="tel:+1234567890" className="lg:text-lg ">
     4038918548
   </a>
 </p>
