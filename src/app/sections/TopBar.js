@@ -25,16 +25,28 @@ export default function TopBar() {
           />
           5815b 36 St SE, Calgary, AB T2C 2J1
         </p>
-        <p className="text-white text-xxs lg:text-base font-bold flex items-center gap-1 lg:gap-3">
+        {/* <p className="text-white text-xxs lg:text-base font-bold flex items-center gap-1 lg:gap-3">
           <Image
-            src={"/images/icons/ClockWhite.svg"}
-            alt="clock icon"
+            src={"/images/icons/PhoneWhite.svg"}
+            alt="Phone icon"
             width={20}
             height={20}
             className="w-4 lg:w-5 h-4 lg:h-5 "
           />
           Monday - Saturday
-        </p>
+        </p> */}
+        <p className="text-white text-xxs lg:text-base font-bold flex items-center gap-1 lg:gap-3">
+  <Image
+    src={"/images/icons/PhoneWhite.svg"}
+    alt="Phone icon"
+    width={20}
+    height={20}
+    className="w-4 lg:w-5 h-4 lg:h-5"
+  />
+  <a href="tel:+1234567890" className="lg:text-lg hover:underline">
+    4038918548
+  </a>
+</p>
       </div>
       <div className="hidden md:flex bg-white/20 gap-5 p-4">
         <Image
