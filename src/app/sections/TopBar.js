@@ -43,7 +43,7 @@ export default function TopBar() {
     height={20}
     className="w-4 lg:w-5 h-4 lg:h-5"
   />
-  <a href="tel:+1234567890" className="lg:text-lg ">
+  <a href="tel:+14038918548" className="lg:text-lg ">
     4038918548
   </a>
 </p>
