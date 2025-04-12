@@ -83,7 +83,7 @@ export default function WorkingProcess() {
                 />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Trial For Make Sure</h3>
+                <h3 className="text-xl font-bold">Trial To Make Sure</h3>
                 <p className=" max-w-sm">
                   We ensure everything runs smoothly before delivery.
                 </p>
